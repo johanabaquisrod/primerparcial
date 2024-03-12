@@ -1,0 +1,22 @@
+package com.drb.recursividad;
+
+public class Prueba {
+
+	    public static void main(String[] args) {
+	        String nombre = "Darlin Baquis";
+	        String texto = "Texto";
+	        crearArchivo(nombre, texto);
+	    }
+
+	    public static void crearArchivo(String nombre, String texto) {
+	        String nombreArchivo = nombre.replace(" ", "") + ".txt";
+	        try {
+	            FileWriter archivo = new FileWriter(nombreArchivo);
+	            archivo.write(texto);
+	            archivo.close();
+	       
+	            System.out.println("el archivo no se ha creado.");
+	            
+	        }
+	    }
+	}
