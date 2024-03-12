@@ -1,0 +1,27 @@
+package com.drb.recursividad;
+
+public class ejercicioOne {
+	
+	    public static void main(String[] args) {
+	        String ruta = "/ruta/del/usuario"; // Reemplaza ruta
+	        encontrarDirectorios(ruta);
+	    }
+
+	    public static void encontrarDirectorios(String ruta) {
+	        Filedirectorio = new File(ruta);
+	        
+	        if (directorio.directorio()) {
+	            System.out.println("Directorio: " + directorio.getAbsolutePath());
+	            File[] archivos = directorio.listFiles();
+	            if (archivos != null) {
+	            	
+	                for (File archivo : archivos) {
+	                    encontrard(archivo.getAbsolutePath());
+	                }
+	            }
+	        }
+	    }
+	
+
+
+}
